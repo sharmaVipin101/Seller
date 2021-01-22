@@ -10,15 +10,11 @@ class Feed extends StatefulWidget {
 }
 
 class _FeedState extends State<Feed> {
-
-
   FirebaseUser user;
   List<DocumentSnapshot> posts;
 
   @override
   Widget build(BuildContext context) {
-
-
    return Scaffold(
      backgroundColor: Colors.blueGrey,
            appBar: AppBar(
@@ -193,22 +189,18 @@ class _FeedState extends State<Feed> {
                                               color: Colors.deepOrange,
                                             ),
                                           ),
-
-
                                         ]
                                     ),
                                   ),
                                   Divider(height: 0,)
                                 ],
                               )
-
                             ],
                           ),
                         ),
                       );
                     },
                   );
-
             }
             else return SpinKitFadingCube(
               itemBuilder: (BuildContext context, int index) {

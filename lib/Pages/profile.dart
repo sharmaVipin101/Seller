@@ -475,7 +475,6 @@ void updateSpecificPost(String id)
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-
                   RaisedButton(
                     child: Text(
                       'Delete',
@@ -485,12 +484,10 @@ void updateSpecificPost(String id)
                         fontFamily: 'Quicksand',
                         fontSize: 17
                       ),
-
                     ),
                     color: Colors.red,
                     onLongPress:(){
                       deleteDialog(id,i);
-
                     } ,
                   ),
                   RaisedButton(
@@ -513,7 +510,6 @@ void updateSpecificPost(String id)
                 ],
               )
             ],
-
           ),
         ),
 
@@ -524,7 +520,6 @@ void updateSpecificPost(String id)
 
   @override
   Widget build(BuildContext context) {
-
       return Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(

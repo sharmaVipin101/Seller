@@ -60,9 +60,8 @@ class _CheckItemState extends State<CheckItem> {
     super.initState();
     getData();
   }
+
   callAction(String number) async{
-
-
     String url = 'tel:$number';
     if(await canLaunch(url))
     {
@@ -71,6 +70,7 @@ class _CheckItemState extends State<CheckItem> {
       throw 'Could not call $number';
     }
   }
+
   emailAction(String email) async{
     String url = 'mailto:$email';
     if(await canLaunch(url))
@@ -80,6 +80,7 @@ class _CheckItemState extends State<CheckItem> {
       throw 'Could not message $email';
     }
   }
+
   smsAction(String number) async{
     String url = 'sms:$number';
     if(await canLaunch(url))
@@ -104,7 +105,7 @@ class _CheckItemState extends State<CheckItem> {
           ),
         ),
       ),
-      body: loading==true ? SpinKitFadingCube(
+      body: loading==true ? SpinKitFadingCube(//while loading show animation
           itemBuilder: (BuildContext context, int index) {
             return DecoratedBox(
               decoration: BoxDecoration(
@@ -114,7 +115,6 @@ class _CheckItemState extends State<CheckItem> {
           },
         ) : SingleChildScrollView(
         child:Container(
-
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(8),
@@ -165,8 +165,6 @@ class _CheckItemState extends State<CheckItem> {
                           color: Colors.deepOrange,
                         ),
                       ),
-
-
                     ]
                 ),
               ),
@@ -186,7 +184,6 @@ class _CheckItemState extends State<CheckItem> {
                       color: Colors.black,
                     ),
                     children: [
-
                       TextSpan(
                         text: "Description:",
                         style: TextStyle(
@@ -205,13 +202,10 @@ class _CheckItemState extends State<CheckItem> {
                           color: Colors.deepOrange,
                         ),
                       ),
-
-
                     ]
                 ),
               ),
               Divider(height: 5,),
-
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -222,7 +216,6 @@ class _CheckItemState extends State<CheckItem> {
                           color: Colors.black,
                         ),
                         children: [
-
                           TextSpan(
                             text: "Actual Price:",
                             style: TextStyle(
@@ -230,7 +223,6 @@ class _CheckItemState extends State<CheckItem> {
                               fontFamily: 'Quicksand',
                               color: Colors.black,
                               fontSize: 15,
-
                             ),
                           ),
                           TextSpan(
@@ -241,8 +233,6 @@ class _CheckItemState extends State<CheckItem> {
                               color: Colors.deepOrange,
                             ),
                           ),
-
-
                         ]
                     ),
                   ),
@@ -254,7 +244,6 @@ class _CheckItemState extends State<CheckItem> {
                           color: Colors.black,
                         ),
                         children: [
-
                           TextSpan(
                             text: "Resell Price:",
                             style: TextStyle(
@@ -262,7 +251,6 @@ class _CheckItemState extends State<CheckItem> {
                               fontFamily: 'Quicksand',
                               color: Colors.black,
                               fontSize: 15,
-
                             ),
                           ),
                           TextSpan(
@@ -270,16 +258,12 @@ class _CheckItemState extends State<CheckItem> {
                             style: TextStyle(
                               fontFamily: 'Quicksand',
                               fontWeight: FontWeight.bold,
-
                               color: Colors.deepOrange,
                             ),
                           ),
-
-
                         ]
                     ),
                   ),
-
                 ],
               ),
               Card(
@@ -299,7 +283,6 @@ class _CheckItemState extends State<CheckItem> {
                           onPressed: () {
                               callAction(mobile);
                           },
-
                         ),
                         IconButton(
                           splashColor: Colors.blue,
@@ -318,12 +301,10 @@ class _CheckItemState extends State<CheckItem> {
                           onPressed: () {
                             smsAction(mobile);
                           },
-
                         ),
                       ],
                     )),
               ),
-
             ],
           ),
         ),
