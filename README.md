@@ -23,3 +23,10 @@ This is the code repository of Seller. Seller is an Android/IOS mobile app where
 12. flutter_spinkit: ^4.1.2
 
 ## License
+Licensed under the [MIT LICENSE](https://github.com/sharmaVipin101/Seller/blob/master/LICENSE)
+
+1st image shows the feed then 2nd image shows the item description. 3rd image is users uploaded images and 4th image is description and functionalities offered. 
+- ![photo_2021-01-22_16-43-34](https://user-images.githubusercontent.com/26058609/105484422-4aee8d00-5cd1-11eb-97be-bf0cd5b20e64.jpg) ![photo_2021-01-22_16-43-38](https://user-images.githubusercontent.com/26058609/105484437-4fb34100-5cd1-11eb-8b7d-e3f8ec21d356.jpg)
+![photo_2021-01-22_16-43-47](https://user-images.githubusercontent.com/26058609/105484446-5477f500-5cd1-11eb-8bc8-50e7d0830381.jpg) ![photo_2021-01-22_16-43-41](https://user-images.githubusercontent.com/26058609/105484442-52159b00-5cd1-11eb-815b-ecbc91be94d8.jpg)
+
+
